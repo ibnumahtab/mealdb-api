@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDB API</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Main Section -->
+    <main>
+        <h1 class="display-3 text-center text-primary py-4">Eat What You Like!</h1>
+        <div class="container">
+            <!-- Search Input and Button -->
+            <div class="input-group mb-5 w-75 mx-auto">
+                <input id="search-field" type="text" class="form-control fs-4"
+                    placeholder="Write A Food Name You Want to Eat" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button onclick="loadMeals()" class="btn btn-outline-secondary fs-4" type="button"
+                    id="search-btn">Search</button>
+            </div>
+
+            <!-- Display The Results -->
+            <div id="dislay-results" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./mealdb.js"></script>
+</body>
+
+</html>
